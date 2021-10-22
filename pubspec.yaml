@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.3
   riverpod:
+  get:
   flutter_icons_null_safety:
   google_fonts:
   http:

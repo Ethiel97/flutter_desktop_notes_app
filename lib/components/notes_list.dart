@@ -42,7 +42,7 @@ class NotesList extends StatelessWidget {
             itemCount: notes.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: _isSm ? 1 : (_isLg ? 2 : 3),
-              childAspectRatio: 1.601,
+              childAspectRatio: 1.63,
             ),
             itemBuilder: (context, index) => NoteCard(
               note: notes[index],

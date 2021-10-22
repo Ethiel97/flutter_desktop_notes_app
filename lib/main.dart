@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_desktop_notes/providers/app_controller.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
 import 'pages/dashboard.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+ MyApp({Key? key}) : super(key: key);
+
+  final controller = Get.put(AppController());
 
   // This widget is the root of your application.
   @override

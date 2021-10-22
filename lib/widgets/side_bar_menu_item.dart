@@ -40,7 +40,7 @@ class _SideBarMenuItemState extends State<SideBarMenuItem> {
         child: AnimatedContainer(
           alignment: Alignment.centerLeft,
           duration: const Duration(milliseconds: 120),
-          width: widget.isDesktop ? null : 45,
+          width: widget.isDesktop ? 180 : 45,
           height: 36,
           padding: EdgeInsets.only(
             left: leftPadding,

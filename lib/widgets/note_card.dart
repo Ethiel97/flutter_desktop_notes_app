@@ -4,7 +4,7 @@ import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import '../constants.dart';
 
 class NoteCard extends StatefulWidget {
-  NoteCard({
+  const NoteCard({
     Key? key,
     required this.note,
   }) : super(key: key);
@@ -32,10 +32,7 @@ class _NoteCardState extends State<NoteCard> {
         },
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 900),
-          transform: entered
-              ? (Matrix4.identity()
-                ..scale(1.02))
-              : null,
+          transform: entered ? (Matrix4.identity()..scale(1.025)) : null,
           margin: const EdgeInsets.only(
             top: 12,
             right: 14,
@@ -108,8 +105,8 @@ class _NoteCardState extends State<NoteCard> {
                         Icons.more_vert,
                         color: darkColor,
                       ),
-                    )
-                  ]
+                    ),
+                  ],
                 ],
               ),
               const SizedBox(
@@ -125,17 +122,19 @@ class _NoteCardState extends State<NoteCard> {
               const SizedBox(
                 height: 4,
               ),
-              Text(
-                widget.note.content,
-                overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.start,
-                style: const TextStyle(
-                  color: textColor,
-                  fontSize: 14,
+              Expanded(
+                child: Text(
+                  widget.note.content,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.start,
+                  style: const TextStyle(
+                    color: textColor,
+                    fontSize: 14,
+                  ),
+                  softWrap: true,
+                  maxLines: 5,
                 ),
-                softWrap: true,
-                maxLines: 5,
-              )
+              ),
             ],
           ),
         ),
