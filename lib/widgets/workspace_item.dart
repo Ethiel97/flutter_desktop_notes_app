@@ -49,7 +49,7 @@ class WorkspaceItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 Text(
-                  "Paynam",
+                  'Paynam',
                   style: TextStyle(
                     color: darkColor,
                     fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class WorkspaceItem extends StatelessWidget {
                   height: 4,
                 ),
                 Text(
-                  "Workspace",
+                  'Workspace',
                   style: TextStyle(
                     color: textColor,
                     fontSize: 12,

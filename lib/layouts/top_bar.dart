@@ -14,7 +14,7 @@ class TopBar extends StatelessWidget {
 
     return Container(
       height: 145,
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         vertical: 10,
       ),
       decoration: BoxDecoration(
@@ -43,7 +43,7 @@ class TopBar extends StatelessWidget {
                   horizontal: _isNotSm ? 24 : 12,
                 ),
                 child: const Text(
-                  "Notes",
+                  'Notes',
                   style: TextStyle(
                     color: darkColor,
                     fontWeight: FontWeight.bold,
@@ -75,7 +75,7 @@ class TopBar extends StatelessWidget {
                       ),
                     ),
                     label: const Text(
-                      " Create a public note",
+                      ' Create a public note',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
@@ -88,7 +88,7 @@ class TopBar extends StatelessWidget {
               padding: EdgeInsets.symmetric(
                 horizontal: _isNotSm ? 24 : 12,
               ),
-              child: SearchBar(),
+              child: const SearchBar(),
             ),
           )
         ],

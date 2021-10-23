@@ -15,7 +15,7 @@ class UserWithStatus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      overflow: Overflow.visible,
+      clipBehavior: Clip.hardEdge,
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(100),
@@ -23,7 +23,7 @@ class UserWithStatus extends StatelessWidget {
             width: size,
             height: size,
             child: Image.asset(
-              "assets/images/$image",
+              'assets/images/$image',
               fit: BoxFit.cover,
             ),
           ),

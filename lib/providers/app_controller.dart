@@ -1,5 +1,4 @@
 import 'package:flutter_desktop_notes/models/menu_item.dart';
-import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import 'package:get/get.dart';
 
 class AppController extends GetxController {
@@ -7,7 +6,7 @@ class AppController extends GetxController {
   MenuItem? menuItem;
 
   void toggleSideBar() {
-    print("TOGGLING SIDE");
+    print('TOGGLING SIDE');
 
     isDesktop = !isDesktop;
     update();

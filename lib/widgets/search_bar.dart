@@ -4,6 +4,8 @@ import 'package:flutter_desktop_notes/constants.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 
 class SearchBar extends StatelessWidget {
+  const SearchBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(

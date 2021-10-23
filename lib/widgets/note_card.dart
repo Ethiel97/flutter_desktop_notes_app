@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_desktop_notes/models/note.dart';
-import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import '../constants.dart';
 
 class NoteCard extends StatefulWidget {
@@ -65,7 +64,7 @@ class _NoteCardState extends State<NoteCard> {
                       width: 38,
                       height: 38,
                       child: Image.asset(
-                        "assets/images/${widget.note.userAvatar}",
+                        'assets/images/${widget.note.userAvatar}',
                         fit: BoxFit.cover,
                         color: darkColor.withOpacity(.3),
                         colorBlendMode: BlendMode.srcOver,

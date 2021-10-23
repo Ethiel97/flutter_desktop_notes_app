@@ -11,38 +11,38 @@ import '../constants.dart';
 List<MenuItem> topMenuItems = [
   MenuItem(
     null,
-    "Search",
+    'Search',
     AntDesign.search1,
   ),
   MenuItem(
     null,
-    "Dashboard",
+    'Dashboard',
     AntDesign.home,
   ),
   MenuItem(
     null,
-    "Chat",
+    'Chat',
     AntDesign.message1,
   ),
   MenuItem(
     null,
-    "Teams",
+    'Teams',
     AntDesign.team,
   ),
-  MenuItem(null, "Tasks", AntDesign.tool),
+  MenuItem(null, 'Tasks', AntDesign.tool),
   MenuItem(
     null,
-    "Game",
+    'Game',
     AntDesign.mobile1,
   ),
   MenuItem(
     null,
-    "Notes",
+    'Notes',
     AntDesign.book,
   ),
   MenuItem(
     null,
-    "Administration",
+    'Administration',
     AntDesign.setting,
   ),
 ];
@@ -50,12 +50,12 @@ List<MenuItem> topMenuItems = [
 List<MenuItem> bottomMenuItems = [
   MenuItem(
     null,
-    "Notifications",
+    'Notifications',
     Entypo.bell,
   ),
   MenuItem(
-    "me.jpg",
-    "Profile",
+    'me.jpg',
+    'Profile',
     null,
   )
 ];

@@ -8,7 +8,8 @@ class SideBarMenuItem extends StatefulWidget {
   final MenuItem menuItem;
   final bool isDesktop;
 
-  SideBarMenuItem(this.menuItem, [this.isDesktop = false]);
+  const SideBarMenuItem(this.menuItem, [this.isDesktop = false, Key? key])
+      : super(key: key);
 
   @override
   State<SideBarMenuItem> createState() => _SideBarMenuItemState();
