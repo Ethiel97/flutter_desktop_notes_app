@@ -15,5 +15,4 @@ class Assets {
   static const String imagesDemo = 'assets/images/demo.jpg';
   static const String imagesInspiration = 'assets/images/inspiration.jpg';
   static const String imagesMe = 'assets/images/me.jpg';
-
 }

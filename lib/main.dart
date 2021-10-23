@@ -7,11 +7,11 @@ import 'constants.dart';
 import 'pages/dashboard.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
- MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
 
   final controller = Get.put(AppController());
 

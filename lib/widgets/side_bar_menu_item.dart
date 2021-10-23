@@ -77,7 +77,7 @@ class _SideBarMenuItemState extends State<SideBarMenuItem> {
                       color: textColor,
                       fontWeight: widget.menuItem.image != null
                           ? FontWeight.w400
-                          : FontWeight.w500
+                          : FontWeight.w500,
                     ),
                   ),
                 ),

@@ -10,32 +10,31 @@ class MainLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    backgroundColor: backgroundColor,
-    body: SafeArea(
-      child: Row(
-        children: [
-          const SingleChildScrollView(child: SideBar()),
-          Expanded(
-            child: Column(
-              children: [
-                const TopBar(),
-                Expanded(
-                  child: Container(
-                 color: const Color(0xffF4F8F9),
-                    child: SingleChildScrollView(
-                      child: Padding(
-                        padding: const EdgeInsets.all(componentPadding),
-                        child: child,
+        backgroundColor: backgroundColor,
+        body: SafeArea(
+          child: Row(
+            children: [
+              const SingleChildScrollView(child: SideBar()),
+              Expanded(
+                child: Column(
+                  children: [
+                    const TopBar(),
+                    Expanded(
+                      child: Container(
+                        color: const Color(0xffF4F8F9),
+                        child: SingleChildScrollView(
+                          child: Padding(
+                            padding: const EdgeInsets.all(componentPadding),
+                            child: child,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
-    ),
-  );
-
+        ),
+      );
 }
