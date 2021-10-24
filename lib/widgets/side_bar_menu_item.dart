@@ -8,7 +8,8 @@ class SideBarMenuItem extends StatefulWidget {
   final MenuItem menuItem;
   final bool isDesktop;
 
-  SideBarMenuItem(this.menuItem, [this.isDesktop = false]);
+  const SideBarMenuItem(this.menuItem, [this.isDesktop = false, Key? key])
+      : super(key: key);
 
   @override
   State<SideBarMenuItem> createState() => _SideBarMenuItemState();
@@ -77,7 +78,7 @@ class _SideBarMenuItemState extends State<SideBarMenuItem> {
                       color: textColor,
                       fontWeight: widget.menuItem.image != null
                           ? FontWeight.w400
-                          : FontWeight.w500
+                          : FontWeight.w500,
                     ),
                   ),
                 ),
